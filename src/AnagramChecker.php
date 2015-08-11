@@ -5,10 +5,10 @@
         {
             $input_word =  strtolower($input_word);
             $comparison_words = strtolower($comparison_words);
-            $comparison_words_separated = explode(" ", $comparison_words);
+            $comparison_array_of_words = explode(" ", $comparison_words);
 
             foreach ($comparison_words_separated as $word) {
-                array(str_split($word)
+                array_push(str_split($word)
             }
 
             // $comparison_word2 = strtolower($comparison_word2);
