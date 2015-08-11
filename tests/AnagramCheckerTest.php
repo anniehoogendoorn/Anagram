@@ -19,18 +19,19 @@
             $this->assertEquals(True, $result);
         }
 
-        // function test_checkAnagram_twoLetters()
-        // {
-        //     //Arrange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $input = "ab";
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($input);
-        //
-        //     //Assert
-        //     $this->assertEquals(True, $result);
-        // }
+        function test_checkAnagram_twoLetters()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input = "ab";
+            $comparison = "ab";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
+
+            //Assert
+            $this->assertEquals(True, $result);
+        }
         //
         // function test_chekAnagram_multipleLetters()
         // {
