@@ -1,7 +1,7 @@
 <?php
     class AnagramChecker
     {
-        function makeAnagram($input_word)
+        function checkAnagram($input_word)
         {
 
         }

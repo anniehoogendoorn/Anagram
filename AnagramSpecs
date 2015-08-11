@@ -1,2 +1,31 @@
 ------Behavoir 1--------
 Check if first word matches second word -- Input: God -- Ouput: Dog
+
+
+//equality
+input: "a", "a"
+output: ["a"]
+
+//equality with a single word in our list, but more than one letter
+input: "ab", "ab"
+output: ["ab"]
+
+//anagram, still single word in list, not an exact equality.
+input: "ab", "ba"
+output: ["ba"]
+
+//upper case letters also should match
+input: "A" "a"
+output: ["a"]
+
+//when there is not a match, it should not be returned.
+input: "a", "b"
+output: []
+
+//multiple words in the list that match
+input: "rat", "tar, art"
+output: ["tar", "art"]
+
+//multiple words in the list where one word matches and one word doesn't
+input: "rat", "tar, rap"
+output: ["tar"]
