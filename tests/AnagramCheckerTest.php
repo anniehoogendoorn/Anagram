@@ -61,6 +61,34 @@
             $this->assertEquals(True, $result);
         }
 
+        function test_checkAnagram_differentLetters()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input = "a";
+            $comparison = "b";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
+
+            //Assert
+            $this->assertEquals(True, $result);
+        }
+
+        function test_checkAnagram_twoWords()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $input = "rat";
+            $comparison = "art,tar";
+
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
+
+            //Assert
+            $this->assertEquals([True, True], $result);
+        }
 
 
 

@@ -25,18 +25,21 @@ input: "A" "a"
 output: ["a"]
 
 
-
-
-
-
+------Behavior 5-----
 
 //when there is not a match, it should not be returned.
 input: "a", "b"
 output: []
 
+------Behavior 6-----
+
 //multiple words in the list that match
 input: "rat", "tar, art"
 output: ["tar", "art"]
+
+
+
+
 
 //multiple words in the list where one word matches and one word doesn't
 input: "rat", "tar, rap"
