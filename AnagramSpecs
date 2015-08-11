@@ -1,18 +1,26 @@
 ------Behavoir 1--------
-Check if first word matches second word -- Input: God -- Ouput: Dog
+Check if letters are equal
 
 
 //equality
 input: "a", "a"
 output: ["a"]
 
+------Behavoir 2------
 //equality with a single word in our list, but more than one letter
 input: "ab", "ab"
 output: ["ab"]
 
+------Behavoir 3------
+
 //anagram, still single word in list, not an exact equality.
 input: "ab", "ba"
 output: ["ba"]
+
+
+
+
+------Bheavoir 4------
 
 //upper case letters also should match
 input: "A" "a"

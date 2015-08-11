@@ -10,13 +10,40 @@
             //Arrange
             $test_AnagramChecker = new AnagramChecker;
             $input = "a";
+            $comparison = "a";
 
             //Act
-            $result = $test_AnagramChecker->checkAnagram($input);
+            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
 
             //Assert
-            $this->assertEquals("a", $result);
+            $this->assertEquals(True, $result);
         }
+
+        // function test_checkAnagram_twoLetters()
+        // {
+        //     //Arrange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $input = "ab";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($input);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
+        //
+        // function test_chekAnagram_multipleLetters()
+        // {
+        //     //Arange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $input = "ab";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($input);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
     }
 
 ?>
