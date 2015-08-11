@@ -1,4 +1,4 @@
-------Behavoir 1--------
+------Behavior 1--------
 Check if letters are equal
 
 
@@ -6,25 +6,29 @@ Check if letters are equal
 input: "a", "a"
 output: ["a"]
 
-------Behavoir 2------
+------Behavior 2------
 //equality with a single word in our list, but more than one letter
 input: "ab", "ab"
 output: ["ab"]
 
-------Behavoir 3------
+------Behavior 3------
 
 //anagram, still single word in list, not an exact equality.
 input: "ab", "ba"
 output: ["ba"]
 
 
-
-
-------Bheavoir 4------
+------Behavior 4------
 
 //upper case letters also should match
 input: "A" "a"
 output: ["a"]
+
+
+
+
+
+
 
 //when there is not a match, it should not be returned.
 input: "a", "b"
