@@ -9,88 +9,88 @@
         {
             //Arrange
             $test_AnagramChecker = new AnagramChecker;
-            $input = "a";
+            $word = "a";
             $comparison = "a";
 
             //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
+            $result = $test_AnagramChecker->checkAnagram($word, $comparison);
 
             //Assert
-            $this->assertEquals(True, $result);
+            $this->assertEquals("a", $result);
         }
 
-        function test_checkAnagram_twoLetters()
-        {
-            //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "ab";
-            $comparison = "ab";
-
-            //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
-
-            //Assert
-            $this->assertEquals(True, $result);
-        }
-
-        function test_checkAnagram_multipleLetters()
-        {
-            //Arange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "ab";
-            $comparison = "ba";
-
-            //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
-
-            //Assert
-            $this->assertEquals(True, $result);
-        }
-
-        function test_checkAnagram_capitolLetters()
-        {
-            //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "A";
-            $comparison = "a";
-
-            //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
-
-            //Assert
-            $this->assertEquals(True, $result);
-        }
-
-        function test_checkAnagram_differentLetters()
-        {
-            //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "a";
-            $comparison = "b";
-
-            //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
-
-            //Assert
-            $this->assertEquals(True, $result);
-        }
-
-        function test_checkAnagram_twoWords()
-        {
-            //Arrange
-            $test_AnagramChecker = new AnagramChecker;
-            $input = "rat";
-            $comparison = "art,tar";
-
-
-            //Act
-            $result = $test_AnagramChecker->checkAnagram($input, $comparison);
-
-            //Assert
-            $this->assertEquals([True, True], $result);
-        }
-
-
+        // function test_checkAnagram_twoLetters()
+        // {
+        //     //Arrange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $word = "ab";
+        //     $comparison = "ab";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
+        //
+        // function test_checkAnagram_multipleLetters()
+        // {
+        //     //Arange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $input = "ab";
+        //     $comparison = "ba";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
+        //
+        // function test_checkAnagram_capitolLetters()
+        // {
+        //     //Arrange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $input = "A";
+        //     $comparison = "a";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
+        //
+        // function test_checkAnagram_differentLetters()
+        // {
+        //     //Arrange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $input = "a";
+        //     $comparison = "b";
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+        //
+        //     //Assert
+        //     $this->assertEquals(True, $result);
+        // }
+        //
+        // function test_checkAnagram_twoWords()
+        // {
+        //     //Arrange
+        //     $test_AnagramChecker = new AnagramChecker;
+        //     $word = "rat";
+        //     $comparison = "art, tar";
+        //
+        //
+        //     //Act
+        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+        //
+        //     //Assert
+        //     $this->assertEquals([True, True], $result);
+        // }
+        //
+        //
 
 
 

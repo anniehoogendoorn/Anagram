@@ -1,44 +1,33 @@
 <?php
     class AnagramChecker
     {
-        function checkAnagram($input_word, $comparison_word)
+        function checkAnagram($word, $comparison_list)
         {
-            $input_word =  strtolower($input_word);
-            $comparison_words = strtolower($comparison_words);
-            $comparison_array_of_words = explode(" ", $comparison_words);
+            $word =  strtolower($word);
+            $comparison_list = strtolower($comparison_list);
+            $comparison_list_array = explode(", ", $comparison_list);
 
-            foreach ($comparison_words_separated as $word) {
-                array_push(str_split($word)
-            }
+            $word_array = str_split($word);
+            $anagrams_array = array();
 
-            // $comparison_word2 = strtolower($comparison_word2);
-
-            $input_array_of_letters = str_split($input_word);
-            $comparison_array_of_letters = str_split($comparison_word);
-            $comparison_array_of_letters2 = str_split($comparison_word2);
-
-            sort($input_array_of_letters);
-            sort($comparison_array_of_letters);
-            sort($comparison_array_of_letters2);
-
-            $comparison_array_of_letters_combined = array($comparison_array_of_letters, $comparison_array_of_letters2);
-            $results_array = array();
+            sort($word_array);
 
 
             // var_dump($input_array_of_letters);
             //
             //
-            foreach ($comparison_array_of_letters_combined as $array){
-                if ($input_array_of_letters == $array) {
-                    array_push($results_array, True);
-                } else {
-                    array_push($results_array, False);
+            foreach ($comparison_list_array as $list_word){
+                $list_word_array = str_split($list_word);
+                sort($list_word_array);
+                if ($word_array == $list_word_array) {
+                    array_push($anagrams_array, $list_word);
                 }
+            }
 
-            return $results_array;
+            return implode(", ", $anagrams_array);
 
             }
-            //
+
 
         }
     }
