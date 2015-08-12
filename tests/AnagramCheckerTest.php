@@ -47,20 +47,20 @@
             $this->assertEquals("ba", $result);
         }
 
-        // function test_checkAnagram_capitolLetters()
-        // {
-        //     //Arrange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $input = "A";
-        //     $comparison = "a";
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
-        //
-        //     //Assert
-        //     $this->assertEquals(True, $result);
-        // }
-        //
+        function test_checkAnagram_capitolLetters()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $word = "A";
+            $comparison = "a";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+
+            //Assert
+            $this->assertEquals("a", $result);
+        }
+
         // function test_checkAnagram_differentLetters()
         // {
         //     //Arrange
