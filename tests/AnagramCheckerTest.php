@@ -19,34 +19,34 @@
             $this->assertEquals("a", $result);
         }
 
-        // function test_checkAnagram_twoLetters()
-        // {
-        //     //Arrange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $word = "ab";
-        //     $comparison = "ab";
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
-        //
-        //     //Assert
-        //     $this->assertEquals(True, $result);
-        // }
-        //
-        // function test_checkAnagram_multipleLetters()
-        // {
-        //     //Arange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $input = "ab";
-        //     $comparison = "ba";
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
-        //
-        //     //Assert
-        //     $this->assertEquals(True, $result);
-        // }
-        //
+        function test_checkAnagram_twoLetters()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $word = "ab";
+            $comparison = "ab";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+
+            //Assert
+            $this->assertEquals("ab", $result);
+        }
+
+        function test_checkAnagram_multipleLetters()
+        {
+            //Arange
+            $test_AnagramChecker = new AnagramChecker;
+            $word = "ab";
+            $comparison = "ba";
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+
+            //Assert
+            $this->assertEquals("ba", $result);
+        }
+
         // function test_checkAnagram_capitolLetters()
         // {
         //     //Arrange
