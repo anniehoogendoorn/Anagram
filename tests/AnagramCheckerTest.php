@@ -65,32 +65,32 @@
         // {
         //     //Arrange
         //     $test_AnagramChecker = new AnagramChecker;
-        //     $input = "a";
+        //     $word = "a";
         //     $comparison = "b";
         //
         //     //Act
         //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
         //
         //     //Assert
-        //     $this->assertEquals(True, $result);
+        //     $this->assertEquals("b", $result);
         // }
-        //
-        // function test_checkAnagram_twoWords()
-        // {
-        //     //Arrange
-        //     $test_AnagramChecker = new AnagramChecker;
-        //     $word = "rat";
-        //     $comparison = "art, tar";
-        //
-        //
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($word, $comparison);
-        //
-        //     //Assert
-        //     $this->assertEquals([True, True], $result);
-        // }
-        //
-        //
+
+        function test_checkAnagram_twoWords()
+        {
+            //Arrange
+            $test_AnagramChecker = new AnagramChecker;
+            $word = "rat";
+            $comparison = "art, tar";
+
+
+            //Act
+            $result = $test_AnagramChecker->checkAnagram($word, $comparison);
+
+            //Assert
+            $this->assertEquals("art, tar", $result);
+        }
+
+
 
 
 
